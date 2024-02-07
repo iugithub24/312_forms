@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="logoPic" src="tools.png" alt="tools logo">
+        </div>
+
+        <div id="title">
+            <h1>Your Ideal Car</h1>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <form id="carForm" action="#" method="get">
+
+
+            <!-- Select Manufacturer -->
+
+            <label for="manufacturer">Manufacturer</label>
+
+            <select id="manufacturer" name="manufacturer" required>
+                <option value="porche">Porche</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="lexus">Lexus</option>
+                <option value="bugatti">Bugatti</option>
+                <option value="lamborghini">Lamborghini</option>
+                <option value="mclaren">Mclaren</option>
+            </select>
+
+
+            <!-- Choose a Color -->
+
+            <label for="boxColour">Pick Your Colour</label>
+
+            <input 
+            type="color" 
+            id="boxColour" 
+            name="boxColour" 
+            value="#ff0000" 
+            required
+            >
+
+
+            <!-- Add Options -->
+
+            <fieldset>
+                <legend>Select The Options You Want to Add</legend>
+
+                <input 
+                type="checkbox" 
+                id="turboCharged" 
+                name="turboCharged" 
+                value="turboCharged"
+                >
+
+                <label for="turboCharged">Turbo Charged</label>
+
+                <br>
+
+                <input 
+                type="checkbox" 
+                id="nos" 
+                name="nos" 
+                value="nos"
+                >
+
+                <label for="nos">NOS</label>
+
+                <br>
+
+                <input 
+                type="checkbox" 
+                id="hybrid" 
+                name="hybrid" 
+                value="v"
+                >
+
+                <label for="hybrid">Hybrid</label>
+
+                <br>
+
+                <input 
+                type="checkbox" 
+                id="4wd" 
+                name="4wd" 
+                value="4wd"
+                >
+
+                <label for="4wd">4WD</label>
+            </fieldset>
+
+            <BR></BR>
+
+            <!-- Enter License -->
+
+            <label for="license">License</label>
+
+            <input 
+            type="text" 
+            id="license" 
+            name="license" 
+            placeholder="Enter license" 
+            required
+            >
+
+            <BR></BR>
+
+            <!-- Choose a Drivetrain -->
+
+            <label for="drivetrain" id="radioLabel">Choose your drivetrain</label>
+
+            <div class="radioOptions">
+                <input 
+                type="radio" 
+                id="fwd" 
+                name="drivetrain" 
+                value="fwd"
+                >
+
+                <label for="fwd">FWD</label>
+
+                <input 
+                type="radio" 
+                id="rwd" 
+                name="drivetrain" 
+                value="rwd" 
+                checked
+                >
+
+                <label for="rwd">RWD</label>
+
+                <input 
+                type="radio" 
+                id="awd" 
+                name="drivetrain" 
+                value="awd"
+                >
+
+                <label for="awd">AWD</label>
+            </div>
+
+
+            <!-- Add Comments -->
+
+            <fieldset>
+                <legend id="commentsLegend">Comments for Pickup or Delivery</legend>
+
+                <textarea 
+                id="customerComments" 
+                name="customerComments" 
+                placeholder="Comments" 
+                required
+                >
+
+                </textarea>
+            </fieldset>
+
+            <BR></BR>
+
+
+            <!-- Enter an Email -->
+
+            <label for="customerEmail">E-Mail</label>
+
+            <input 
+            type="email" 
+            id="customerEmail" 
+            name="customerEmail" 
+            placeholder="Enter your email" 
+            required
+            >
+
+            <input 
+            type="submit" 
+            id="process" 
+            value="Submit"
+            >
+
+        </form>
+    </div>
+</body>
+</html>
